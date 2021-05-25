@@ -19,5 +19,6 @@ urlpatterns = [
     # the expected datatype can be specified before the colon
     # using path converters e.g. <int:> <slug:> <str:> etc
     path('<int:year>/<int:month>/<int:day>/<slug:post>/', views.post_detail, name='post_detail'),
+    path('<int:post_id>/share/', views.post_share, name='post_share'), 
 ]
 
