@@ -3,6 +3,8 @@ from django.db.models.deletion import CASCADE
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+# django-taggit package for adding tags to models
+# pip install django-taggit
 from taggit.managers import TaggableManager
 
 # Create your models here.
