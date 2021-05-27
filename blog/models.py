@@ -16,7 +16,7 @@ class PublishedManager(models.Manager):
     # method to include your custom filter in the final 
     # QuerySet.
     def get_queryset(self):
-        return super(PublishedManager, self).get_queryset().filter(status='published')
+        return super().get_queryset().filter(status='published')
 
 
 class Post(models.Model):
