@@ -19,3 +19,5 @@ class CommentForm(forms.ModelForm):
         # by providing a 'fields' tuple or exclude specific ones using an 'exclude' tuple
         fields = ('name', 'email', 'body')
 
+class SearchForm(forms.Form):
+    query = forms.CharField()
